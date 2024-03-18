@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Home Page
+    </title>
+    <link href="https://db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Tiempos+Text+Regular"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid;
+            text-align: center;
+            /* center checkbox horizontally */
+
+            font-family: 'Courier New', Courier, monospace;
+            /* center checkbox vertically */
+
+        }
+
+        th {
+            font-weight: bold;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        td {
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+
+
+
+        .topnav {
+            overflow: hidden;
+            background-color: #65ae1e;
+        }
+
+        .topnav a {
+            float: right;
+            color: black;
+            padding: 20px 30px 0px 0px;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: "Tiempos Text Regular";
+            font-weight: 900;
+        }
+
+        .topnav a.title {
+            padding-top: 14px;
+            float: left;
+            color: #222222;
+            font-family: 'Abril Fatface';
+            font-weight: 200;
+            font-size: xxx-large;
+        }
+
+        .center {
+            margin-top: 30vh;
+            display: flex;
+            height: 12vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 3vh;
+            text-align: center;
+            font-size: larger;
+            background-color: #222222;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="topnav">
+                <img src="images/to-do-list-svg.svg" style="align-self: center; width:60px;height:80px; float: left;" />
+                <a class="title">ToDo </a>
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+        <div class="center">
+            <table>
+                <tr>
+                    <th>Task</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Attending today's lecture</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Solve the lab</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Ifttar</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Make wireframe for the website</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            &copy; Copyright 2024
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

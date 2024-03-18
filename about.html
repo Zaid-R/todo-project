@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        About Page
+    </title>
+    <link href="https://db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Tiempos+Text+Regular"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .topnav {
+
+            overflow: hidden;
+            background-color: #65ae1e;
+        }
+
+        .topnav a {
+            float: right;
+            color: black;
+            padding: 20px 30px 0px 0px;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: "Tiempos Text Regular";
+            font-weight: 900;
+        }
+
+        /* 
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        } */
+
+        .topnav a.title {
+            padding-top: 14px;
+            float: left;
+            color: #222222;
+            font-family: 'Abril Fatface';
+            font-weight: 200;
+            font-size: xxx-large;
+        }
+
+        .center {
+            /* margin-left: auto;
+            margin-right: auto; */
+            margin-top: 30vh;
+            display: flex;
+            height: 12vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 3vh;
+            text-align: center;
+            font-size: larger;
+            background-color: #222222;
+            color: white;
+
+        }
+
+
+        .rectangle {
+            border: 2px solid #7c868dcb;
+            width: min-content;
+            flex-direction: column;
+            height: min-content;
+            background: hsla(0, 9%, 85%, 0.996);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .rounded-box {
+            width: 30vw;
+            padding: 15px;
+            border: 2px solid rgba(27, 25, 25, 0.508);
+            /* A calming blue border */
+            border-radius: 10px;
+            /* The secret ingredient for rounded corners */
+            outline: none;
+            /* No outlines, we're keeping it smooth */
+            font-size: 16px;
+            /* Just the right font size */
+            color: #333;
+            /* A subtle text color */
+        }
+
+        .button {
+            background-color: #1b11e1;
+            border-radius: 13px;
+            color: white;
+            padding: 10px;
+            width: min-content;
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        .textfield-margin{
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="topnav">
+                <img src="images/to-do-list-svg.svg" style="align-self: center; width:60px;height:80px; float: left;" />
+                <a class="title">ToDo </a>
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+        <div class="rectangle" style="border-radius: 30px;">
+            <img src="images/defalut-personal-image-icon-svg.svg"
+                style=" height: 20vh; width: 20vw; margin: 0 auto;" />
+            <div style="font-size: 35px;font-weight: 900;margin-top: 20px;margin-bottom: 10px; display: flex; justify-content: center;font-family:'Tiempos Text Regular' ;">
+                John Doe
+            </div>
+            <div style="font-size: 20px;">
+                An individual capable of complex emotions, thoughts, and actions, navigating the journey of life with
+                inherent potential and unique experiences.
+            </div>
+        </div>
+        <div class="rectangle" style="margin-top: 5vh; margin-bottom: 5vh;">
+            <input type="text" class="rounded-box textfield-margin" placeholder="Name"  />
+            <input type="text" class="rounded-box textfield-margin" placeholder="Email"  />
+            <textarea placeholder="Message" rows="5" class="rounded-box" ></textarea>
+            <button class="button"> Submit</button>
+
+        </div>
+
+        <footer>
+            &copy; Copyright 2024
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

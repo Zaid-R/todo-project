@@ -1,4 +1,6 @@
-var username = prompt("Please enter your name:");
+'use strict';
+
+var username = prompt("Please enter your name:")||"John Deo";
 var gender = prompt("Please enter your gender (male/female):");
 
 var age = prompt("Please enter your age:");
@@ -19,3 +21,11 @@ if (!isSkipWelcom) {
         alert("");
     }
 }
+
+let answers = [
+    prompt("Are you married? (Yes/No)") || "Invalid",
+    prompt("Are you student? (Yes/No)") || "Invalid",
+    prompt("Are you good? (Yes/No)") || "Invalid",
+];
+
+answers.forEach(answer => console.log(answer));
